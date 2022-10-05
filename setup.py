@@ -1,13 +1,14 @@
 from setuptools import setup, version, find_packages
 import os
+from CodeHelper import __version__
 
 here = os.path.abspath(os.path.dirname(__file__))
 
 with open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = '0.0.6'
-DESCRIPTION = 'Improve your code environment'
+VERSION = __version__
+DESCRIPTION = 'Improve your coding environment'
 
 setup(
     name="Code-Helper",
